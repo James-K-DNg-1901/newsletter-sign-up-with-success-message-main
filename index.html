@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<main>
+  <span class="main-box">
+    <div class="sign-up-style">
+      <h1>Stay updated!</h1>
+      <p class="p-st">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li><img src="./assets/images/icon-list.svg" alt="icon-list">Product discovery and building what matters</li>
+        <li><img src="./assets/images/icon-list.svg" alt="icon-list">Measuring to ensure updates are a success</li>
+        <li><img src="./assets/images/icon-list.svg" alt="icon-list">And much more!</li>
+      </ul>
+      <span class="lable">
+        <label for="Email">Email address</label>
+        <b id="warning" style="visibility: hidden;">valid email required</b>
+      </span>
+      <input class="e-input" type="text" id="e-in" placeholder="email@company.com">
+      <input class="btn1" type="button" id="sub-btn" value="Subscribe to monthly newsletter">
+    </div>
+    <div class="signup-img"></div>
+  </span>
+</main>
+
+<footer hidden>
+  <div class="notify-box">
+    <img src="./assets/images/icon-success.svg" alt="icon-success">
+    <h2>Thanks for subscribing!</h2>
+    <p>
+      A confirmation email has been sent to <b id="show-e">ash@loremcompany.com</b>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <input class="btn1" type="button" id="dismiss-btn" value="Dismiss message">
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
